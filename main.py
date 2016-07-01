@@ -126,6 +126,7 @@ class Gmail(object):
             print "failed to send mail"
 
 
-my_gmail = Gmail()
-print my_gmail.get_init_emails()
-my_gmail.recent(repeat=True)
+if __name__ == "__main__":
+    my_gmail = Gmail()
+    print my_gmail.get_init_emails()
+    my_gmail.recent(repeat=True)
